@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Margaret Ogbor</title>
-    <link rel="stylesheet" href="./styles/topnav.css">
-    <link rel="stylesheet" href="./styles/column.css">
+    <link rel="stylesheet" href="../../../styles/topnav.css">
+    <link rel="stylesheet" href="../../../styles/column.css">
     <!-- <link rel="stylesheet" href="./styles/main.css"> -->
-    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="../../../styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="rotate-string.js"></script>
+    <style>
+        .display{
+            /* background: black; */
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            color: #4CAF50;
+            font-size: 36px;
+            font-weight: 800;
+            padding: 10px;
+        }
+        h1[class="display"]{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,7 +32,7 @@
     </header>
     <!-- Top Nav -->
     <div class="topnav" id="myTopnav">
-        <a href="./index.html" class="active"><i class="fa fa-home"></i></a>
+        <a href="../../../index.html" class="active"><i class="fa fa-home"></i></a>
         <a href="#">HTML</a>
         <a href="#">CSS</a>
         <a href="#">JAVASCRIPT</a>
@@ -39,17 +53,24 @@
         <div class="sidenav" id="mySidenav"><!-- Column 1 -->
             <h3>HTML & CSS Practice Exercises</h3>
             <p>Browse the below for exercises</p>
-            <a href="W3resource/w3resource.html">W3resource</a>
-            <a href="ALCwithGoogle3.0/alcwithgoogle.html">Udacity Front</a>
-            <a href="W3resource/w3resource.html">Eloquent JS</a>
-            <a href="W3resource/w3resource.html">Egghead.io</a>
-            <a href="W3resource/w3resource.html">JS Exercises</a>
-            <a href="W3resource/w3resource.html">W3schools</a>
-            <a href="W3resource/w3resource.html">JavaScript.info</a>
+            <a href="../../1. Javascript Basics/javascript-basics.html">Basics</a>
+            <a href="#">Recursion</a>
+            <a href="#">Conditionals and loops</a>
+            <a href="#">Math</a>
+            <a href="#">Array</a>
+            <a href="#">Datetime</a>
+            <a href="#">String</a>  
         </div>
         <!-- Main -->
         <div class="main">  <!-- Column 2 -->
-            <h1>Google Udacity Scholarship Program</h1>
+            <h1>Rotate your name...</h1>
+            <h4>4. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.</h4>
+            <span class="display">Reversed word displays here</span>
+            <h1 class="display"><!--Error message--></h1>
+            <input type="text" name="" id="name">
+            <button id="demo" onclick="rotate_string(document.getElementById('name').value)">Display</button>
+        
+            <!-- <h1>Google Udacity Scholarship Program</h1>
             <p>I started learning how to build websites in December of 2016, when I came across an wwww.edx.org mobile app on a friend's phone. In May of 2018, I signed up for the Andela udacity Scholarship program. The Andela program has assisted my drive to improve on my skills by introducing me to an online community of aspiring web developers from all over africa. There we share experiences, network and help each other with the courses problem sets from the Udacity Online School. Learning how to build websites has been a superb experience for me and I would love to pen a few of my experiences here.</p>
             <p>** Skills I have learnt.**</p>
             <ul class="list">
@@ -70,7 +91,7 @@
             <ul class="list">
                 <li>Letting go of the deprecated strike &ltstrike&gt tag and making use of the &lts&gt tag and &ltdel&gt tag, hich serve the same purpose to strile through a text.</li>
             </ul>
-            <p>** How have you used the problem solving strategies from the first project to overcome challenges so far? **</p>
+            <p>** How have you used the problem solving strategies from the first project to overcome challenges so far? **</p> -->
             <hr>
             <!-- Footer -->
             <div class="social-media">  
@@ -104,14 +125,41 @@
 
 
 
-<!-- Obsolete Design -->
-            
-        <!-- <div class="twitter-icon"> 
-            <p><span style="color: green;">peggylicious</span>.github is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all conten While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2018 by Refsnes Data. All Rights Reserved.</p>
-            <div class="social-media">
-                <a href="https://twitter.com/margaret_ogbor"><i class="fa fa-twitter" id="tweety"></i></a>
-                <a href="https://twitter.com/margaret_ogbor"><i class="fa fa-instagram" id="insty"></i></a>
-                <a href="https://twitter.com/margaret_ogbor"><i class="fa fa-facebook facebook" id="fb"></i></a>
-                <a href="https://twitter.com/margaret_ogbor"><i class="fa fa-slack" id="slacky"></i></a>
-            </div>
-        </div>  -->
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rotate String</title>
+    <script src="rotate-string.js"></script>
+    <style>
+        .display{
+            background: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 36px;
+            font-weight: 800;
+            padding: 10px;
+        }
+        h1[class="display"]{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h4>4. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.</h4>
+    <span class="display">Reversed word displays here</span>
+    <h1 class="display">Error message</h1>
+    <input type="text" name="" id="name">
+    <button id="demo" onclick="rotate_string(document.getElementById('name').value)">Display</button>
+</body>
+</html> -->

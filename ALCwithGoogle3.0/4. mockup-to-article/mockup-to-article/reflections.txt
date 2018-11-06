@@ -1,0 +1,29 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+** Skills I have learnt.**
+* To use the Mozilla Development Network(MDN) and StackOverflow.
+* To build simple webpages using HTML.
+* Understanding the use of trees in data science.
+* Understanding the basics of Server.
+* Difference between a Client and a Server.
+* Understanding Local and External file paths.
+* Http and Https protocols
+* Difference between Tags and Elements
+
+
+** What has been easy? **
+* Formatting the document using paragraph <p> tags, bold <b> tags, and emphasis <em> tags.
+
+** What has been difficult? **
+* Letting go of the deprecated strike <strike> tag and making use of the <s> tag and <del> tag, hich serve the same purpose to strile through a text.
+
+** How have you used the problem solving strategies from the first project to overcome challenges so far? **
+

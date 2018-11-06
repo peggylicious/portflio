@@ -1,0 +1,241 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        overflow: hidden;
+    }
+    .group{
+        background: rgba(41, 117, 179, 0.795);
+        overflow: hidden;
+        padding: 10px 0px 10px 0px;
+    }
+    /* .nav-list:nth-child(2), .nav-list:nth-child(3){
+        float: right;
+        background: red;
+    } */
+    .horizontal-nav {
+        float: left;  
+        width: 25%;
+        padding: 10px;
+        font-size: 20px;
+        position: relative;
+        /* position: relative; */
+        /* background: white; */
+    }
+    .horizontal-nav:hover .horizontal-ul {
+        display: block;
+        width: 200px;
+        overflow: hidden;
+    }
+    .horizontal-ul {
+        margin: 0;
+        display: none;
+        position: static;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        /* height: 100%; */
+    }
+    .nav-list{
+        display: inline;
+    }
+    /* .nav-anchor{
+        font-size: 32px;
+    } */
+    #nav-search{
+        float: right;
+        padding-left: 70px;
+    }
+    .dropdown{
+        /* Display span dropdown if screen width is less than 767px*/
+        display: inline;  
+        background: blue;
+        padding-top: 10px; 
+        margin: 0px;        
+    }
+
+    /* Verical Nav Bar */
+    .vertical-nav{
+        float: left;
+        width: 75%; 
+    }
+    .vertical-nav>h1, .vertical-nav>p{
+        display: none;
+    }
+    .vertical-ul{
+        padding: 0px 0px ;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .vertical-list{
+        background: red;
+        list-style-type: none;
+        padding-left: 0px;
+        padding-top: 10px; 
+        float: left;
+        font-size: 20px;
+    }   
+    .vertical-anchor{
+        text-decoration: none;
+        padding-right: 20px;
+        color: inherit;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* Horizontal Nav */
+    .horizontal-nav{
+        /* background: rgba(41, 117, 179, 0.795); */
+        padding: 10px 10px 5px 10px;
+        margin: 0;
+        background: rgba(41, 117, 179, 0.795);
+    }
+
+    .horizontal-ul{
+        /* background: red; */
+        /* padding: 10px 0px; */
+        overflow: hidden;
+        color: inherit;
+    }
+
+    .nav-list{
+        /* background: yellow; */
+        list-style-type: none;
+        /* display: inline-block; */
+        padding-right: 20px;
+        font-size: 20px;
+        float: left;
+        color: inherit;
+    }
+    .nav-anchor{
+        /* background: green; */
+        text-decoration: none;
+        padding-right: 20px;
+        color: inherit;
+    }
+    #nav-search{
+        float: right;
+        padding-right: 70px;
+    }
+
+
+    /* **Vertical Nav Bar** */
+    .vertical-nav{
+        /* background: yellow; */
+        width: 25%;
+        height: 500px;
+        /* padding: 10px; */
+        float: left;
+        position: relative;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+        
+        /* height: 500px; */
+    }
+    
+    .vertical-ul{
+        padding: 10px 0px ;
+        margin: 0px;
+    }
+    .vertical-list{
+        /* background: red; */
+        list-style-type: none;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .vertical-anchor{
+        text-decoration: none;
+        /* font-size: 18px;     */
+    }
+
+    /* Main Page */
+
+    /* .main{
+        float: left;
+        padding-left: 150px;
+    }
+    div > h1{
+        text-align: center;
+    } */
+
+    /* Do not display span dropdown if screen width is greater than 767px*/
+    .dropdown{
+        display: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    /* You can take this off later to see the effect */  
+}
+
+/* 
+.horizontal-nav{
+    background: rgba(41, 117, 179, 0.795);
+    padding: 10px 10px 5px 10px;
+    margin: 0;
+}
+
+.horizontal-ul{
+    background: red;
+    padding: 10px 0px;
+    overflow: hidden;
+    color: inherit;
+}
+
+.nav-list{
+    background: yellow;
+    list-style-type: none;
+    padding-right: 20px;
+    font-size: 20px;
+    float: left;
+    color: inherit;
+}
+.nav-anchor{
+    background: green;
+    text-decoration: none;
+    padding-right: 20px;
+    color: inherit;
+} */
+/* #nav-search{
+    float: right;
+    padding-left: 20px;
+} */
+
+
+/* **Vertical Nav Bar** */
+/* .vertical-nav{
+    float: left;
+    width: 25%;
+    height: 500px;
+    background: yellow;
+    padding: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
+} */
+/* .vertical-ul{
+    padding: 10px 0px ;
+    margin: 0px;
+} */
+/* .vertical-list{
+    background: red;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 10px;
+} */
+/* .vertical-anchor{
+    text-decoration: none;
+    font-size: 18px;    
+} */
+
+/* Main Page */
+
+.main{
+    float: left;
+    padding-left: 150px;
+}
+div > h1{
+    text-align: center;
+}

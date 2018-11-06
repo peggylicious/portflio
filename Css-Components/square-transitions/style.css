@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+
+.container{
+    height: 400px;
+    width: 500px;
+    background-color: rgb(240, 232, 232);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.big-circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 5s ease-in-out;
+}
+
+.small-circle{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    /* Center both horizontally and vertically; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 2s ease-in-out;
+}
+
+.container:hover .big-circle{
+    transition: all 2s ease-in-out;
+    background-color: transparent;
+}
+
+.container:hover .small-circle{
+    transform: rotate(30deg);
+    border-radius: 0;
+    width: 10px;
+    height: 10px;
+}
+
+/* Top most left */
+.container:hover .one{
+    transition: all 2s ease-in-out;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    background-color: green;
+}
+
+/* Top middle */
+.container:hover .two{
+    transition: all 2s ease-in-out;
+    top: 0;
+    transform: translate(-50%, 0%);
+    background-color: goldenrod;
+}
+/* Top right */
+.container:hover .three{
+    transition: all 2s ease-in-out;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 0%);
+    background-color: blue;
+}
+
+/* Right Middle */
+.container:hover .four{
+    transition: all 2s ease-in-out;
+    /* top: 50%; */
+    left: 100%;
+    transform: translate(-100%, -50%);
+    background-color: red;
+}
+
+/* Bottom Right */
+.container:hover .five{
+    transition: all 2s ease-in-out;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    background-color: green;
+}
+
+/* Bottom Middle */
+.container:hover .six{
+    transition: all 2s ease-in-out;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: goldenrod;
+}
+
+/* Bottom Left */
+.container:hover .seven{
+    transition: all 2s ease-in-out;
+    top: 100%;
+    left: 0;
+    transform: translate(0%, -100%);
+    background-color: blue;
+}
+
+/* Left Middle */
+.container:hover .eight{
+    transition: all 2s ease-in-out;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    background-color: red;
+}

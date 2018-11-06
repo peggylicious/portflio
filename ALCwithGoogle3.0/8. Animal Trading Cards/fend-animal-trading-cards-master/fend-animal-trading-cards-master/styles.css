@@ -1,0 +1,43 @@
+/* add your CSS here */
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5);
+    width: 340px;
+    padding: 10px;
+}
+.main{
+    border: 1px solid white;
+    width: 320px;
+    box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.5);
+}
+.animal-name{
+    padding-left: 10px;
+}
+.interesting-fact{
+    font-style: italic;
+    font-size: 14px;
+}
+.animal-information{
+    padding: 0px 10px;
+    margin: 0px 10px 10px 10px;
+    border: 1px white groove;
+    box-shadow: 0px 5px 15px 0px rgba(153,153,153,0.2);
+}
+.animal-image{
+    padding: 10px;
+}
+.list-items{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0; 
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.label{
+    font-weight: 700; 
+    font-size: 14px;
+}
+li > span{
+    /* border: 1px solid black; */
+}

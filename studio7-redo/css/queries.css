@@ -1,0 +1,136 @@
+@media only screen and (min-width: 480px){
+    .services{
+        padding: 50px 40px;
+    }
+    .logo{
+        /* background-color: red; */
+    }
+    .container .hero{
+        height: 55vh;
+    }
+    .hero .hero-intro h1{
+        font-size: 2rem;
+    }
+    .hero .hero-intro p{
+        font-size: .875rem;
+    }
+    .about-photo{
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+    .services .services-intro h1{
+        font-size: 35px;
+    }
+
+    .services .services-intro p{
+        padding: 30px 70px;
+    }
+
+    .logo{
+        /* background-color: green; */
+    }
+    .nav{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li{
+        float: left;
+    }
+
+    .nav a{
+        font-size: 12px;
+        font-weight: 200;
+        padding: 20px;
+    }
+
+    .nav a:focus{
+        background-color: #25BAD0;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    .container .hero{
+        height: 100vh;
+    }
+    .hero .hero-intro h1{
+        font-size: 42px;
+    }
+    .hero .hero-intro p{
+        font-size: 18;
+    }
+
+    .services-section-1, .services-section-2, .services-section-3, .services-section-4{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center; */
+        float: left;
+        width: 25%;
+    }
+    .about-photo-container{
+        flex-direction: row;
+    }
+    .about-photo{
+        height: 300px;
+        width: 40%;
+    }
+
+    .about-text{
+        width: 60%;
+    }
+
+    .about-text{
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    .logo{
+        /* background-color: purple; */
+    }
+
+    .container .hero{
+        background-position: 70% 50%;
+        height: 100vh;
+    }
+    .services .services-intro h1{
+        font-size: 40px;
+    }
+    .services .services-intro p{
+        padding: 30px 100px;
+        /* width: 80%;
+        margin: 0 auto; */
+    }
+    .about-photo{
+        /* height: 500px; */
+        /* background-size: 100% auto; */
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .logo{
+        /* background-color: yellow; */
+    }
+
+    .container .hero{
+        background-position: 70% 50%;
+        height: 100vh;
+    }
+    .services .services-intro p{
+        padding: 30px 150px;
+    }
+    .about-photo{
+        height: 350px;
+        /* background-size: 100% auto; */
+    }
+}

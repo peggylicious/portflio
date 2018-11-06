@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    /* You can take this off later to see the effect */  
+}
+@media only screen and (orientation: portrait){
+    /* Check this code */
+    .vertical-ul .vertical-list:nth-child(3), .vertical-list:nth-child(4), .vertical-list:nth-child(5), .vertical-list:nth-child(6), .vertical-list:nth-child(7)
+    {
+        background: red;
+        display: none;
+    }
+    .group{
+        /* goups the horizotal and verical v */
+        background-color: rgba(41, 117, 179, 0.795);
+        /* padding: .4% 0% .4% 0%; */
+        padding: 10px 0px 10px 0px;
+        overflow: hidden;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    .horizontal-nav{
+        /* Gives the horizontal nav a width of 20% and moves it 
+        to the left of the containing .group class*/
+        float: left;
+        width: 15%;
+        /* background: red;   */
+        color: wheat;
+    }
+    .dropdown{
+        /* Creates a dropdown and moves it left of the .horizontal-nav class*/
+        float: left;  
+    }
+    .horizontal-ul{
+        /* Hides the unordered list for screen size less than 600px */
+        display: none;
+        list-style-type: none;
+    }
+    .horizontal-list{
+        /* Displays list items in the .dropdown class as block elements */
+        display: block;
+    }
+    .horizontal-anchor{
+        /* Removes the underline from horizontal nav anchor element */
+        text-decoration: none;
+        color: wheat;
+    }
+    
+    /* .horizontal-nav*/ .horizontal-ul{ 
+        /* Create the dropdown List*/
+        position: absolute;
+        z-index: 1;
+        padding: 0px;
+        /* moves the dropdown .horizontal-ul downwards so, the dropdown name shows */
+        margin-top: 10%;
+    }
+    .horizontal-nav:hover .horizontal-ul{
+        /* creates Hover effect of the horizontal nav bar*/
+        display: block;
+        width: 40%;
+        overflow: hidden;
+        background-color: rgba(41, 117, 179);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .horizontal-nav:hover{
+        background-color: rgba(41, 117, 179, 0.795);
+    }
+    .horizontal-nav > .dropdown{
+        /* Creates a space of 20px around the dropdown element */
+        padding: 20px 0px 20px 0px;  
+    }
+
+
+    /* ****** Vertical Navigation Bar ******* */
+
+    
+    .vertical-nav{
+        /* This makes the vertical bar align properly with the horizontal */
+        /* background: yellow; */
+        overflow: hidden;
+        width: 85%;
+        /* This makes for the space created by the forn size of 18px */
+        padding: 2px 0px 2px 10px;
+    }
+    .vertical-list{
+        display: inline;
+        padding-left: 0%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .vertical-list:hover{
+        /* Sets the vertical list hover */
+        background-color: rgba(41, 117, 179);
+    }
+    .vertical-anchor{
+        /* No need for this */
+        text-decoration: none;
+        color: wheat;  
+    }
+    
+    .vertical-nav>.vertical-ul{
+        padding-left: 0px;
+    }
+    .vertical-nav>h3, .vertical-nav>p{
+        /* Hides the paragraph and H1 element of the vertical nav */
+        display: none;
+    }
+}
+
+
+@media only screen and (orientation: landscape){
+    .horizontal-nav{
+        display: block;
+        width: 100%;
+        background-color: rgba(41, 117, 179);
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    .dropdown{
+        /* Hides the dropdown */
+        display: none;
+        padding-left: 10px;  
+    }
+    .horizontal-ul{
+        position: static;
+        list-style-type: none;
+        padding: 20px;
+    }
+    .horizontal-list{
+        
+    }
+    .horizontal-anchor{
+        float: left;
+        padding-right: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        color: wheat;
+        text-decoration: none;
+    }
+    #horizontal-search{
+        float: right;
+        color: wheat;
+    }
+    
+    .horizontal-ul>.horizontal-list{
+        
+    }
+
+    /* *******Vertical Navigation Bar ****** */
+
+    .vertical-nav{
+        width: 25%;
+        float: left;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        /* height: 600px; */
+        
+    }
+    .vertical-ul{
+        list-style-type: none;
+        /* Moves the vertical unordered to the extreme left */
+        padding: 0;
+        
+    }
+    .vertical-list{
+        padding: 10px;
+        font-weight: 600;
+    }
+    .vertical-anchor{
+        text-decoration: none;
+    }
+}
+
+/* If screen is less than 800px and greater than 600px */
+/* @media only screen and (max-width: 800px){
+    
+    #horizontal-search{
+        display: none;
+    }
+    .group{
+        background-color: rgba(41, 117, 179);
+        color: red;
+    }
+} */
+/* @media (orientation: landscape) and (max-width: 600){
+    body{
+        background-color: red;
+    }
+} */

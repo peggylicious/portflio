@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<body>
+    <h1>Lab: Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWeight" name="width" min="1" value="1">
+        <input type="submit" onclick="makeGrid()">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    
+    <table id="pixelCanvas"></table>
+    <!-- Tool Box -->
+    <footer class="tool-box">
+        <button type="submit" class="eraser-button">Eraser</button>
+        <button type="submit" class="undo-border">Remove Border</button>
+        <button type="submit" class="redo-border">Add Border</button><br>
+        <span>Paint Border</span><input type="color" id="borderColor" ><br>
+        <span>Border Size</span><input type="number" id="borderWidth" min="1" value="1">
+    </footer>
+    <script src="designs.js"></script>
+</body>
+</html>

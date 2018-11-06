@@ -1,0 +1,792 @@
+*{
+    box-sizing: border-box !important;
+    /* border: 1px solid yellow; */
+    /* border: none; */
+}
+body{
+    margin: 0;
+}
+
+header{
+    /* display: none; */
+    font-family: 'Redressed', cursive;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    letter-spacing: .3em;
+}
+
+header h1 .heading-two{
+    color: purple;
+}
+
+header h1 .heading-one{
+    /* color: purple; */
+    font-size: 48px;
+}
+
+.nav{
+    background-color: #444343;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+.home{
+    float: left;
+    width: 15%;
+    background-color: #800080;
+}
+
+.home a{
+    margin: 0 auto;
+}
+
+.home a, .links>ul li a{
+    display: block;
+    padding: 12px 16px;
+    color: white;
+    font-family: 'Sofia', cursive;
+}
+
+.links{
+    float: left;
+    width: 70%;
+    /* font-family: 'Sofia', cursive; */
+    visibility: hidden;
+}
+
+.links>ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.links>ul li{
+    float: left;
+    width: 50%;
+    /* background: teal; */
+}
+
+.links>ul li a{
+    text-decoration: none;
+    text-align: center;
+    /* font-size: 16px; */
+}
+
+.links>ul>li a:hover, .home a:hover{
+    background: black;
+}
+
+/* Hamburger */
+.ham{
+    float: left;
+    width: 15%;
+    background-color: #800080;
+    padding: 13px 0;
+    
+}
+
+.ham .wrapper{
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    /* margin-left: 0 auto; */
+    display: block;
+}
+
+.ham .wrapper div{
+    height: 3px;
+    width: 20px;
+    margin: 3px auto;
+    background-color: white;
+}
+
+.ham:hover{
+    background-color: black;
+}
+
+/* Main */
+
+.hero{
+    background-image: url("../images/Sight_2016_09_20_181728_948.jpg");
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: 60% 10%;
+    /* overflow: hidden; */
+}
+
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(128, 0, 128, 0.616); */
+    background-color: rgba(99, 96, 96, .4);
+    margin: 0;
+}
+
+.info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.info h1{
+    margin: 0;
+    padding: 5px;
+    letter-spacing: .1em;
+    /* background-color: red; */
+    text-align: right;
+    font-size: 24px;
+    font-family: 'Redressed', cursive;
+}
+
+.info h3{
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+    font-weight: 200;
+    font-size: 14px;
+}
+.info p{
+    display: none;
+}
+
+.main{
+    /* overflow: hidden; */
+    /* background-color: green; */
+    /* margin: 0; */
+}
+
+.row-1{
+    padding-top: 2em;
+}
+
+.story{
+    padding: 2em 10px 0 10px;
+    transition: padding, 1s;
+}
+
+.transit{
+    display: block;
+    padding-top: 0;
+    transition: padding, 1s;
+    /* background-color: red; */
+    /* transform: translate(70px, 0px) rotate(360deg); */
+}
+
+
+.main h1{
+    font-size: 30px;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+    outline: none;
+    font-weight: 400;
+    text-align: center;
+    /* transition: all 4s; */
+}
+
+.main p{
+    /* text-align: center; */
+    word-spacing: .1em;
+    font-size: 18px;
+    color: #5d5d5d;
+    line-height: 1.6em;
+    /* margin: 0 0 22px; */
+    letter-spacing: 0.3px;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3001;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: rgb(68, 67, 67);
+    margin: 0;
+    /* background-color: rgb(43, 27, 44); */
+}
+
+.footer .social{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+.footer .social i{
+    padding: 10px;
+    font-size: 26px;
+    color: #e90ae9;
+}
+
+.horizontal-rule{
+    padding-bottom: 2em;
+}
+
+.horizontal-rule .rule{
+    height: 2px;
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+/* Footer Links */
+.footer-links{
+    overflow: hidden;
+}
+
+.underline-one{
+    padding: 3px 3px;
+    /* background-color: red; */
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+
+.underline-one ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+.underline-one h3{
+    margin: 0;
+    color: white;
+    font-size: .9em;
+    text-align: center;
+    font-weight: 500;
+}
+.underline-one ul li a{
+    color: #e90ae9;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: block;
+    font-size: .875em;
+}
+
+.underline-one>ul>li a:hover{
+    background-color: palevioletred;
+    color: white;
+    /* text-decoration: #e90ae9;
+    text-decoration-style: solid; */
+}
+
+/* Thumbnails */
+section{
+    /* margin: 0 2.5em; */
+    margin: 0;
+}
+.thumbnail-container .thumbnail-image{
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.thumbnail-container .image-1{
+    background-image: url("../images/IMG-20180409-WA0002.jpg");
+    background-position: 40% 60%;
+    background-size: 150%;
+}
+.thumbnail-container .image-2{
+    background-image: url("../images/peggy-smile.jpg");
+    background-position: 60% 45%;
+    background-size: 150%;
+}
+.thumbnail-container .image-3{
+    background-image: url("../images/WP_20180129_16_41_55_Pro.jpg");
+    background-size: 200%;
+    background-position: 50% 45%;
+
+}
+
+.thumbnail-container .thumbnail-content{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.thumbnail-container .thumbnail-content h3{
+    text-align: center;
+    /* margin: 0; */
+    padding: .2rem;
+    letter-spacing: .1em;
+}
+.thumbnail-container .thumbnail-content p{
+    text-align: center;
+    padding: .3em;
+    letter-spacing: .05em;
+}
+
+
+.thumbnail-container{
+    /* border: 1px solid gold; */
+}
+
+/* hr */
+
+.hr-1{
+    /* margin: 1em 0 1em 0; */
+}
+
+
+.hr-1 div{
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    color: white;
+    margin: 1em auto;
+}
+
+.copyright p{
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.flyer-container{
+    position: absolute;
+    top: 65vh;
+    z-index: 2001;
+    width: 100%;
+    margin: 0 auto;
+    /* display: flex; */
+    /* overflow: hidden; */
+}
+
+
+.flyer-box{
+    /* float: left;
+    width: 33.33%; */
+    /* flex: 1; */
+}
+
+.flyer-box:last-child{
+    display: none;
+}
+.flyer{
+    background-size: 100%;
+    height: 180px;
+    max-width: 90%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.flyer-1{
+    background-image: url("../images/pf6.jpg");
+}
+.flyer-2{
+    background-image: url("../images/pf7.jpg");
+}
+.flyer-3{
+    background-image: url("../images/pf8.jpg");
+   
+}
+
+/* .flyer-box>div{
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+} */
+
+.flyer, .flyer-about{
+    margin: 0 auto;
+}
+.flyer-about{
+    max-width: 90%;
+    height: 180px;
+    background-color: white;
+    color: #5d5d5d;
+}
+
+.flyer-about h3{
+    display: block;
+    letter-spacing: .5em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.flyer-about p{
+    letter-spacing: .05em;
+    padding: 0 1em 1em 1em;
+}
+
+.flyer-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+.second-hero{
+    /* background-color: #6677BC; */
+    background-color: #800080;
+    height: 175vh;
+    width: 100%;
+    position: relative;
+}
+
+.second-hero button{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    width: 120px;
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    /* font-size: 18px; */
+    color: #800080;
+    background-color: white;
+    font-weight: 700;
+    margin: 0 auto;
+    border-bottom: 5px solid #800080;
+    /* outline-color: #e90ae9; */
+    /* border-bottom: 5px solid #444344; */
+}
+
+
+
+@media only screen and (min-width: 320px){
+    header h1{
+        letter-spacing: .5em;
+    }
+
+    .info h1{
+        text-align: left;
+    }
+    .info h3{
+        text-align: left;
+        color: #800080;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+    .info p{
+        
+        display: block;
+        text-align: right;
+    }
+    .ham .wrapper div{
+        width: 20px;
+    }
+    .links{
+        visibility: visible;
+    }
+    .home, .ham{
+        width: 15%;
+    }
+    .links{
+        width: 70%;
+    }
+
+    .flyer-container{
+        top: 70vh;
+    }
+    /* .flyer-3{
+        display: none;
+    } */
+    .second-hero{
+        height: 180vh;
+    }
+    
+    .second-hero button{
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+@media only screen and (min-width: 480px){
+    header h1{
+        letter-spacing: .5em;
+    }
+    .wrapper div{
+        width: 25px;
+    }
+    .home{
+        width: 10%;
+    }
+    .ham{
+        width: 10%;
+    }
+
+    .links{
+        width: 80%;
+    }
+    
+    /* .second-hero{
+        height: 200vh;
+    } */
+    
+    /* .flyer-container{
+        top: 70vh;
+    } */
+
+
+    .flyer-3{
+        /* display: none; */
+        /* display: inline; */
+    }
+
+    .flyer-container{
+        /* display: flex; */
+        overflow: hidden;
+        top: 60vh;
+    }
+    
+    
+    .flyer-box{
+        float: left;
+        width: 50%;
+        /* flex: 1; */
+    }
+    .second-hero{
+        height: 85vh;
+        padding-bottom: 0;
+    }
+    .second-hero button{
+        bottom: 0;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 400px){
+    /* .second-hero {
+        height: 50hv;
+    } */
+}
+
+
+
+
+@media only screen and (min-width: 600px){
+    header{
+        color: black;
+        text-align: center;
+        font-family: 'Redressed', cursive;
+    }
+    header h1{
+        padding: 15px;
+        margin: 0;
+        letter-spacing: 1.5em;
+        /* text-align: center; */
+    }
+
+    /* .wrapper{
+        margin-left: 50%;
+    } */
+
+    .ham{
+        width: 10%;
+    }
+
+    .links{
+        width: 80%;
+    }
+    .home{
+        width: 10%;
+    }
+
+    .hero{
+        /* background-size: 120%; */
+        height: 100vh;
+        background-position: 40% 10%;
+    }
+
+    .info{
+        /* margin: 0 auto; */
+        position: relative;
+        top: 50%;
+        left: 50%;;
+        width: 50%;
+        color: white;
+        
+        /* height: 100px; */
+    }
+
+    .info h1{
+        margin: 0;
+        letter-spacing: .1em;
+        font-size: 36px;
+        /* background-color: red; */
+        text-align: right;
+        font-family: 'Redressed', cursive;
+    }
+
+    .info h3{
+        text-align: left;
+        letter-spacing: .1em;
+        font-size: 20px;
+        /* font-family: 'Sail', cursive; */
+    }
+
+    .info p{
+        text-align: right;
+        letter-spacing: .2em;
+        display: block;
+    }
+
+    /* Main */
+    .main .story{
+        padding: 0px 30px;
+    }
+
+    .row-1{
+        display: flex;
+        padding-top: 10em;
+    }
+
+    .row-1 .col{
+        flex: 1;
+    }
+
+    .transit{
+        padding: 3em 1em 3em 1em;
+        transition: all, 1s;
+        /* transform: translate(70px, 0px) rotate(360deg); */
+    }
+
+
+
+    /* Footer */
+    .footer .social{
+        font-size: 30px;
+    }
+    
+    .footer .social i{
+        padding: 20px;
+    }
+
+    .underline-one h3{
+        font-size: 1.2em;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .underline-one ul{
+        border-right: 2px solid white;
+    }
+
+    .underline-one{
+        
+    }
+
+    .underline-one>ul>li a{
+        font-size: 1em;
+    }
+
+    section{
+        /* display: flex; */
+        overflow: hidden;
+    }
+    
+    .thumbnail-container{
+        /* flex: 1; */
+        float: left;
+        width: 33.33%;
+    }
+
+
+    .flyer-container{
+        display: flex;
+        /* overflow: hidden; */
+        top: 100vh;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .flyer-box{
+        flex: 1;
+    }
+    .flyer-box:last-child{
+        display: initial;
+        flex: 1;
+    }
+
+    .second-hero{
+        height: 70vh;
+    }
+    .info{
+        /* width: 60%; */
+        width: 100%;
+        left: 0;
+        /* right: 50%; */
+    }
+    .info h1{
+        text-align: left;
+    }
+    .info h3{
+        /* letter-spacing: 0; */
+        font-size: 18px;
+        text-align: left;
+        color: #800080;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+
+    .ham{
+        width: 5%;
+    }
+
+    .links{
+        width: 90%;
+    }
+    .home{
+        width: 5%;
+    }
+
+    .info h1{
+        font-size: 3em;
+        letter-spacing: .5em;
+    }
+    .flyer-container{
+        display: flex;
+        /* overflow: hidden; */
+        top: 100vh;
+    }
+    
+    
+    .flyer-box{
+        /* float: left; */
+        /* width: 50%; */
+        flex: 1;
+    }
+}
+
+/* .hamburger{
+    float: right;
+    width: 20%;
+    background-color: #800080;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.hamburger a{
+    display: block;
+    padding: 12px 16px;
+    color: white;
+} */

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background-image: url("images/peggy-black-full.jpg");
+    height: 100vh;
+    /* float: left; */
+    transition: all 0.5s;
+}
+
+.float{
+    width: 100px;
+    float: right;
+    color: #ffffff;
+    border: 1px solid red;
+    /* transition: all 0.03s; */
+}
+
+.hero1{
+    background-image: url("./images/intro-bg.jpg");
+    height: 100vh;
+    transition: all 0.5s;
+}
+
+.hero2{
+    background-image: url("./images/black-girl.jpg");
+    height: 100vh;
+    transition: all 0.5s;
+}

@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+}
+.wrap{
+    background-color: rgb(52, 160, 142);
+
+      overflow: hidden;
+      /* margin: 0; */
+      /* padding: 20px; */
+    }
+/* .group{
+    
+    margin: 0;
+    max-height: 1000px;
+} */
+.dropbtn{
+    display: none;
+}
+
+/*************************************************/
+
+/* Header */
+header{
+    /* sets the space inside the header */
+    padding: 10px;
+    /* background: red; */
+}
+h1 > span{
+    color: green;
+    font-weight: 500;
+}
+.header-heading, .header-paragraph{
+    /* closes the gap between header and the navigation */    
+    text-align: center;
+    margin: 0;
+}
+header h1{
+    font-family: 'lucida console';
+}
+
+/*************************************************/
+
+/* Horizontal nav */
+
+.horizontal-nav{
+    display: block;
+}
+.horizontal-ul {
+    overflow: hidden;
+    background-color: rgb(126, 126, 117);
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+    
+}
+.horizontal-list{
+    float: left;
+    /* background: green; */
+}
+.horizontal-list .horizontal-anchor{
+    display: block;
+    /* background: palevioletred; */
+    padding: 14px 16px;   
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    /* margin: 5px; */
+}
+.horizontal-list .horizontal-anchor:hover{
+    background: aquamarine
+}
+#horizontal-search{
+    padding: 14px 16px; 
+    float: right;
+    /* font-size: 18px; */
+    font-weight: 600;
+}
+.horizontal-nav .alt-ul{
+    display: none;
+}
+
+
+/*************************************************/
+
+/* Vertical nav */
+.vertical-nav{
+    /* The use of padding-bottom and margin-bottom 
+    here is to give both floated divs(.main nd .vertical-nav), 
+    same height. */
+    padding-top: 10px;
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+    /* max-width: 25%; */
+    float: left;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* background-color: rgba(41, 117, 179); */
+}
+.vertical-ul{
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.vertical-list .vertical-anchor{
+   display: block;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-weight: 500;
+}
+/* Main */
+.main{
+    float: left;
+    max-width: 60%;
+    /* Giving .main same height with .vertical-nav */
+    padding-bottom: 500em;
+    margin-bottom: -500em;
+}
+
+/* .wrap{
+    overflow: hidden;
+} */
+
+/*************************************************/
+
+/* Queries */
+
+@media only screen and (max-width: 600px)/* and (min-width: 300px)*/{
+    .horizontal-nav .alt-ul{
+       display: inline-block;
+    }
+    .alt-ul .alt-list{
+        float: left;
+    }
+    .alt-ul
+    /* .horizontal-ul .horizontal-list:nth-child(5), .horizontal-list:nth-child(4)
+    {
+        background: red;
+        display: none;
+    }    */
+    .wrap{
+        background-color: rgb(126, 126, 117);
+          overflow: hidden;
+          /* margin: 0; */
+          padding: 20px;
+          display: none;
+        }
+    .dropbtn{
+        /* display: none; */
+        display: inline-block;
+        width: 10%;
+        /* padding: 10px; */
+        margin: 0;
+    }
+    
+     .horizontal-nav{
+        /* Removing position relative, reveals the dropdown menu properly */
+        /* position: relative; */
+        /* display: none; */
+        /* overflow: hidden; */
+        background: red;
+    }
+    .horizontal-ul{
+        display: none;
+        position: absolute;
+        background: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .horizontal-nav:hover .horizontal-ul{
+        display: block;
+    }
+
+    
+    .vertical-nav{
+        display: none;
+       float: left;
+       box-shadow: none;
+       background-color: rgb(126, 126, 117);
+       width: 80%;
+       padding: 0;
+       margin: 0;
+    }
+    .vertical-ul{
+        padding: 0px;
+        margin: 0px;    
+    }
+   .vertical-list{
+       float: left; 
+   }
+   .vertical-list .vertical-anchor{
+       display: inline;
+   }
+    .vertical-nav h3, .vertical-nav p{
+        display: none;
+    }
+    .main h1, .main p{
+        display: block;
+    }
+    .vertical-ul .vertical-list:nth-child(7), .vertical-list:nth-child(6), .vertical-list:nth-child(5), .vertical-list:nth-child(4), .vertical-list:nth-child(3)
+    {
+        background: red;
+        display: none;
+    }
+    .main{
+        max-width: 100%;
+    }
+    /* .vertical-nav{
+        display: block;
+    }
+    .vertical-ul {
+        overflow: hidden;
+        background-color: rgb(126, 126, 117);
+        padding: 0;
+        margin:0;
+        list-style-type: none;
+        
+    }
+    .vertical-list{
+        float: left;
+    }
+    .vertical-list .vertical-anchor{
+        display: block;
+        padding: 14px 16px;   
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+    }
+    .vertical .vertical-anchor:hover{
+        background: aquamarine
+    }
+
+    .horizontal-ul{
+        display: none;
+    }
+    .main{
+        display: block;
+    } */
+}
+
+@media only screen and (max-width: 200px){
+    
+}
